@@ -1,297 +1,152 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Mujibur Travels</title>
+<title>Mujibur Travels | Dubai Travel Experts</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<link rel="stylesheet" href="style.css">
 
-<style>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial;
-}
-
-body{
-background:#f4f6f9;
-}
-
-/* HEADER */
-
-header{
-background:#0b3d91;
-color:white;
-padding:15px 8%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-}
-
-nav a{
-color:white;
-margin-left:20px;
-text-decoration:none;
-font-weight:bold;
-}
-
-/* SLIDER */
-
-.slider{
-position:relative;
-height:90vh;
-overflow:hidden;
-}
-
-.slide{
-position:absolute;
-width:100%;
-height:100%;
-background-size:cover;
-background-position:center;
-display:none;
-align-items:center;
-justify-content:center;
-color:white;
-text-align:center;
-}
-
-.slide.active{
-display:flex;
-}
-
-.slide h1{
-font-size:50px;
-background:rgba(0,0,0,0.5);
-padding:20px;
-border-radius:10px;
-}
-
-/* BUTTON */
-
-.btn{
-margin-top:20px;
-display:inline-block;
-padding:12px 25px;
-background:#ff7a00;
-color:white;
-text-decoration:none;
-border-radius:6px;
-}
-
-/* SECTION */
-
-section{
-padding:70px 8%;
-text-align:center;
-}
-
-.services{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:25px;
-margin-top:30px;
-}
-
-.card{
-background:white;
-padding:25px;
-border-radius:10px;
-box-shadow:0 4px 10px rgba(0,0,0,0.1);
-transition:0.3s;
-}
-
-.card:hover{
-transform:translateY(-10px);
-}
-
-/* FOOTER */
-
-footer{
-background:#0b3d91;
-color:white;
-text-align:center;
-padding:20px;
-}
-
-/* WHATSAPP */
-
-.whatsapp{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-color:white;
-padding:15px;
-border-radius:50%;
-text-decoration:none;
-font-size:20px;
-}
-
-</style>
 </head>
 
 <body>
 
 <header>
 
-<h2>Mujibur Travels</h2>
+<div class="logo">
+<img src="images/logo.png" alt="Mujibur Travels Logo">
+<span>Mujibur <span class="gold">Travels</span></span>
+</div>
 
 <nav>
-<a href="#">Home</a>
-<a href="#services">Services</a>
-<a href="#tours">Tours</a>
-<a href="#contact">Contact</a>
+<a href="index.html" class="active">Home</a>
+<a href="about.html">About</a>
+<a href="corporate.html">Corporate</a>
+<a href="services.html">Services</a>
+<a href="contact.html">Contact</a>
 </nav>
 
 </header>
 
-<!-- IMAGE SLIDER -->
+<!-- HERO -->
 
-<div class="slider">
+<section class="hero">
 
-<div class="slide active"
-style="background-image:url('https://images.unsplash.com/photo-1501785888041-af3ef285b470')">
+<div class="hero-content">
 
-<div>
-<h1 class="animate__animated animate__fadeInDown">
-Explore Dubai With Mujibur Travels
-</h1>
+<h1>Explore Dubai with Trusted Travel Experts</h1>
 
-<a class="btn" href="#services">Our Services</a>
+<p>Visa • Flights • Tours • Hotels</p>
+
+<div class="hero-buttons">
+<a class="btn" href="tel:+971500000000">📞 Call Now</a>
+<a class="btn outline" href="https://wa.me/971549954221?text=Hello%20I%20would%20like%20to%20inquire">WhatsApp</a>
 </div>
 
 </div>
 
-<div class="slide"
-style="background-image:url('https://images.unsplash.com/photo-1546410531-bb4caa6b424d')">
-
-<div>
-<h1>Best Desert Safari Experience</h1>
-</div>
-
-</div>
-
-<div class="slide"
-style="background-image:url('https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1')">
-
-<div>
-<h1>Cheap Flight Tickets Worldwide</h1>
-</div>
-
-</div>
-
-</div>
+</section>
 
 <!-- SERVICES -->
 
-<section id="services">
+<section>
 
-<h2 class="animate__animated animate__fadeInUp">
-Our Services
-</h2>
+<h2>Our Services</h2>
+<p style="margin-top:10px;color:#777;">Complete travel solutions under one roof</p>
 
 <div class="services">
 
 <div class="card">
 <h3>Visa Services</h3>
-<p>Fast UAE tourist visa and visit visa processing.</p>
+<p>Fast UAE visa processing with high approval rate.</p>
 </div>
 
 <div class="card">
-<h3>Flight Ticket Booking</h3>
-<p>Cheap international and domestic airline tickets.</p>
+<h3>Flight Tickets</h3>
+<p>Best deals on international & domestic flights.</p>
 </div>
 
 <div class="card">
 <h3>Hotel Booking</h3>
-<p>Budget and luxury hotels worldwide.</p>
+<p>Luxury and budget hotels worldwide.</p>
 </div>
 
 <div class="card">
 <h3>Desert Safari</h3>
-<p>Dune bashing, camel ride and BBQ dinner.</p>
+<p>Dune bashing, BBQ dinner & live shows.</p>
 </div>
 
 </div>
 
 </section>
 
-<!-- TOUR SECTION -->
+<!-- WHY US -->
 
-<section id="tours">
+<section>
 
-<h2>Popular Tours</h2>
+<h2>Why Choose Mujibur Travels</h2>
 
 <div class="services">
 
 <div class="card">
-<h3>Evening Desert Safari</h3>
-<p>Dune bashing + camel ride + BBQ dinner.</p>
+<h3>✔ Trusted Agency</h3>
+<p>Serving happy customers across UAE.</p>
 </div>
 
 <div class="card">
-<h3>VIP Desert Safari</h3>
-<p>Luxury safari with VIP seating and premium food.</p>
+<h3>✔ Best Price Guarantee</h3>
+<p>Affordable travel packages.</p>
 </div>
 
 <div class="card">
-<h3>Dubai City Tour</h3>
-<p>Visit Burj Khalifa, Dubai Marina and Palm Jumeirah.</p>
+<h3>✔ 24/7 Support</h3>
+<p>Quick response on WhatsApp anytime.</p>
 </div>
 
 </div>
+
+</section>
+
+<!-- CTA -->
+
+<section class="cta">
+
+<h2>Ready to Travel?</h2>
+<p>Contact us now and get the best deals today</p>
+
+<a class="btn" href="tel:+971549954221">📞 Call Now</a>
 
 </section>
 
 <!-- CONTACT -->
 
-<section id="contact">
+<section>
 
-<h2>Contact Mujibur Travels</h2>
+<h2>Contact Us</h2>
 
-<p>📍 Dubai, UAE</p>
-<p>📞 +971 50 000 0000</p>
+<p>📍 Deira, Dubai, UAE</p>
+<p>📞 +971 54 995 4221</p>
 <p>📧 info@mujiburtravels.com</p>
 
 </section>
 
+<!-- FOOTER -->
+
 <footer>
-
-<p>© 2026 Mujibur Travels</p>
-
+<p>© 2026 Mujibur Travels | Dubai</p>
 </footer>
 
-<a class="whatsapp" href="https://wa.me/971500000000">💬</a>
+<!-- WHATSAPP FLOAT -->
 
-<script>
+<a class="whatsapp"
+href="https://wa.me/971549954221?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20your%20services."
+target="_blank">
 
-/* SLIDER */
+<img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
 
-let slides = document.querySelectorAll(".slide");
-let index = 0;
-
-function showSlide(){
-
-slides[index].classList.remove("active");
-
-index++;
-
-if(index >= slides.length){
-index = 0;
-}
-
-slides[index].classList.add("active");
-
-}
-
-setInterval(showSlide,4000);
-
-</script>
+</a>
 
 </body>
 </html>
