@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Mujibur Travels</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+body{
+background:#f4f6f9;
+}
+
+/* HEADER */
+
+header{
+background:#0b3d91;
+color:white;
+padding:15px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+nav a{
+color:white;
+margin-left:20px;
+text-decoration:none;
+font-weight:bold;
+}
+
+/* SLIDER */
+
+.slider{
+position:relative;
+height:90vh;
+overflow:hidden;
+}
+
+.slide{
+position:absolute;
+width:100%;
+height:100%;
+background-size:cover;
+background-position:center;
+display:none;
+align-items:center;
+justify-content:center;
+color:white;
+text-align:center;
+}
+
+.slide.active{
+display:flex;
+}
+
+.slide h1{
+font-size:50px;
+background:rgba(0,0,0,0.5);
+padding:20px;
+border-radius:10px;
+}
+
+/* BUTTON */
+
+.btn{
+margin-top:20px;
+display:inline-block;
+padding:12px 25px;
+background:#ff7a00;
+color:white;
+text-decoration:none;
+border-radius:6px;
+}
+
+/* SECTION */
+
+section{
+padding:70px 8%;
+text-align:center;
+}
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+margin-top:30px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+/* FOOTER */
+
+footer{
+background:#0b3d91;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+/* WHATSAPP */
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px;
+border-radius:50%;
+text-decoration:none;
+font-size:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<h2>Mujibur Travels</h2>
+
+<nav>
+<a href="#">Home</a>
+<a href="#services">Services</a>
+<a href="#tours">Tours</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</header>
+
+<!-- IMAGE SLIDER -->
+
+<div class="slider">
+
+<div class="slide active"
+style="background-image:url('https://images.unsplash.com/photo-1501785888041-af3ef285b470')">
+
+<div>
+<h1 class="animate__animated animate__fadeInDown">
+Explore Dubai With Mujibur Travels
+</h1>
+
+<a class="btn" href="#services">Our Services</a>
+</div>
+
+</div>
+
+<div class="slide"
+style="background-image:url('https://images.unsplash.com/photo-1546410531-bb4caa6b424d')">
+
+<div>
+<h1>Best Desert Safari Experience</h1>
+</div>
+
+</div>
+
+<div class="slide"
+style="background-image:url('https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1')">
+
+<div>
+<h1>Cheap Flight Tickets Worldwide</h1>
+</div>
+
+</div>
+
+</div>
+
+<!-- SERVICES -->
+
+<section id="services">
+
+<h2 class="animate__animated animate__fadeInUp">
+Our Services
+</h2>
+
+<div class="services">
+
+<div class="card">
+<h3>Visa Services</h3>
+<p>Fast UAE tourist visa and visit visa processing.</p>
+</div>
+
+<div class="card">
+<h3>Flight Ticket Booking</h3>
+<p>Cheap international and domestic airline tickets.</p>
+</div>
+
+<div class="card">
+<h3>Hotel Booking</h3>
+<p>Budget and luxury hotels worldwide.</p>
+</div>
+
+<div class="card">
+<h3>Desert Safari</h3>
+<p>Dune bashing, camel ride and BBQ dinner.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- TOUR SECTION -->
+
+<section id="tours">
+
+<h2>Popular Tours</h2>
+
+<div class="services">
+
+<div class="card">
+<h3>Evening Desert Safari</h3>
+<p>Dune bashing + camel ride + BBQ dinner.</p>
+</div>
+
+<div class="card">
+<h3>VIP Desert Safari</h3>
+<p>Luxury safari with VIP seating and premium food.</p>
+</div>
+
+<div class="card">
+<h3>Dubai City Tour</h3>
+<p>Visit Burj Khalifa, Dubai Marina and Palm Jumeirah.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<h2>Contact Mujibur Travels</h2>
+
+<p>📍 Dubai, UAE</p>
+<p>📞 +971 50 000 0000</p>
+<p>📧 info@mujiburtravels.com</p>
+
+</section>
+
+<footer>
+
+<p>© 2026 Mujibur Travels</p>
+
+</footer>
+
+<a class="whatsapp" href="https://wa.me/971500000000">💬</a>
+
+<script>
+
+/* SLIDER */
+
+let slides = document.querySelectorAll(".slide");
+let index = 0;
+
+function showSlide(){
+
+slides[index].classList.remove("active");
+
+index++;
+
+if(index >= slides.length){
+index = 0;
+}
+
+slides[index].classList.add("active");
+
+}
+
+setInterval(showSlide,4000);
+
+</script>
+
+</body>
+</html>
