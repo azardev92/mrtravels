@@ -24,8 +24,6 @@ z-index:1000;
 box-shadow:0 2px 10px rgba(0,0,0,0.2);
 }
 
-/* LOGO */
-
 .logo{
 display:flex;
 align-items:center;
@@ -42,13 +40,12 @@ height:45px;
 color:#d4af37;
 }
 
-/* NAV */
-
 nav a{
 color:white;
 margin-left:20px;
 text-decoration:none;
 font-weight:500;
+transition:0.3s;
 }
 
 nav a:hover,
@@ -86,8 +83,8 @@ color:black;
 text-decoration:none;
 border-radius:6px;
 font-weight:600;
-display:inline-block;
 transition:0.3s;
+display:inline-block;
 }
 
 .btn:hover{
@@ -101,16 +98,16 @@ border:2px solid #d4af37;
 color:#d4af37;
 }
 
-/* SECTIONS */
+/* SECTION */
 
 section{
-padding:70px 8%;
+padding:60px 8%;
 text-align:center;
 }
 
-.dark{
-background:#0a1f44;
-color:white;
+.subtext{
+margin-top:10px;
+color:#777;
 }
 
 /* CARDS */
@@ -127,23 +124,11 @@ background:white;
 padding:25px;
 border-radius:12px;
 box-shadow:0 5px 20px rgba(0,0,0,0.08);
-display:flex;
-flex-direction:column;
-justify-content:space-between;
+transition:0.3s;
 }
 
-.card h3{
-color:#0a1f44;
-margin-bottom:10px;
-}
-
-.card p{
-color:#555;
-}
-
-.card .btn{
-margin-top:15px;
-align-self:flex-start;
+.card:hover{
+transform:translateY(-8px);
 }
 
 /* CTA */
@@ -153,9 +138,41 @@ background:#d4af37;
 color:black;
 }
 
-.cta .btn{
-background:#0a1f44;
-color:white;
+/* QR */
+
+.qr-img{
+width:180px;
+margin-top:20px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* CONTACT CARDS */
+
+.contact-cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+margin-top:30px;
+}
+
+.contact-card{
+background:white;
+padding:20px;
+border-radius:12px;
+box-shadow:0 5px 20px rgba(0,0,0,0.08);
+text-align:left;
+transition:0.3s;
+}
+
+.contact-card:hover{
+transform:translateY(-5px);
+}
+
+.contact-card a{
+color:#0a1f44;
+text-decoration:none;
+font-weight:500;
 }
 
 /* FOOTER */
@@ -167,7 +184,7 @@ text-align:center;
 padding:20px;
 }
 
-/* WHATSAPP */
+/* WHATSAPP FLOAT */
 
 .whatsapp{
 position:fixed;
@@ -185,4 +202,46 @@ justify-content:center;
 .whatsapp img{
 width:28px;
 height:28px;
+}
+section h2{
+margin-bottom:15px;
+}
+
+form{
+margin-top:10px;
+}
+form{
+display:flex;
+flex-direction:column;
+gap:12px;
+margin-top:15px;
+}
+
+form input,
+form textarea{
+padding:12px;
+border:1px solid #ddd;
+border-radius:6px;
+font-size:14px;
+}
+
+form textarea{
+min-height:100px;
+resize:vertical;
+}
+
+form button{
+padding:12px;
+background:#0a1f44;
+color:white;
+border:none;
+border-radius:6px;
+cursor:pointer;
+font-weight:600;
+transition:0.3s;
+}
+
+form button:hover{
+background:#d4af37;
+color:black;
 }
