@@ -245,3 +245,7 @@ form button:hover{
 background:#d4af37;
 color:black;
 }
+.card .btn{
+margin-top:15px;
+display:inline-block;
+}
